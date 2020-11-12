@@ -2,7 +2,7 @@ FROM docker:19.03
 
 RUN apk add bash
 
-ENV TOKEN=$SUPER_SECRET
+ENV SUPER_SECRET "$SUPER_SECRET"
 
 COPY entrypoint.sh /entrypoint.sh
 
